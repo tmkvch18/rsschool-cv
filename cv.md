@@ -13,7 +13,7 @@
 
 
 * Location: [Minsk, Belarus](https://goo.gl/maps/5hZc2DUQgbwYdX5s7)
-
+* GitHub: [https://github.com/tmkvch18](https://github.com/tmkvch18)
 
 
 ---
