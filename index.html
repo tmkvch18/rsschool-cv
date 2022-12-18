@@ -1,11 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/82cd3dccf9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrap">
+        <div class="logo header__logo">
+          <a class="logo__link" href="https://tmkvch18.github.io/rsschool-cv/"
+            ><i class="fa-solid fa-code logo__icon icon"></i
+          ></a>
+        </div>
+        <div class="nav header__nav">
+          <nav class="menu header__menu">
+            <ul class="menu__list list">
+              <li class="list__item">
+                <a class="list__item-link" href="#">Name</a>
+              </li>
+              <li class="list__item">
+                <a class="list__item-link" href="#">Bio</a>
+              </li>
+              <li class="list__item">
+                <a class="list__item-link" href="#">Contacts</a>
+              </li>
+              <li class="list__item">
+                <a class="list__item-link" href="#">Skills</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="title">
+          <h1 class="title__name">Iĺja Tomkovič</h1>
+          <p class="title__text">Front-End Developer</p>
+        </div>
+        <div class="main__content content">
+          <ul class="content__list">
+            <li class="content__item">
+              <div class="content__photo">
+                <img
+                  class="content__img"
+                  src="./images/sonic.jpg"
+                  alt="photo"
+                >
+              </div>
+            </li>
+            <li class="content__item">
+              <div class="content__contacts contacts">
+                <h3 class="content__title">Contacts:</h3>
+                <div class="contacts__text">
+                  <p><span class="star">*</span> Location: Minsk, Belarus</p>
+                  <p>
+                    <span class="star">*</span>
+                    <a class="contacts__link" href="https://github.com/tmkvch18"
+                      >GitHub</a
+                    >
+                  </p>
+                  <p>
+                    <span class="star">*</span> Discord:
+                    <span class="star">tominay (@tmkvch18)</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="content__item">
+              <h3 class="content__title summary">Summary:</h3>
+              <div class="summary__text">
+                Promising Front-end Developer with broad technical skillset. I
+                learn new technologies, read articles from the field of web
+                development. Highly motivated and positive person, who has a
+                huge will to learn.
+              </div>
+            </li>
+            <li class="content__item">
+              <h3 class="content__title skills">Skills:</h3>
+              <ul class="skills__list">
+                <li class="skills__item"><span class="star">*</span> html5</li>
+                <li class="skills__item"><span class="star">*</span> css3</li>
+                <li class="skills__item"><span class="star">*</span> js</li>
+                <li class="skills__item">
+                  <span class="star">*</span> webpack
+                </li>
+                <li class="skills__item">
+                  <span class="star">*</span> Figma, Adobe Photoshop, Adobe
+                  Illustrator
+                </li>
+              </ul>
+            </li>
+            <li class="content__item">
+              <h3 class="content__title">Code Example:</h3>
+              <pre class="code-example">
+								<code>
+ function duplicateCount(text) {
+   return text.toLowerCase().split('').filter(function(val, i, arr) {
+     return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+   }).length;
+ }
+								</code>
+							</pre>
+            </li>
+            <li class="content__item">
+              <h3 class="content__title training-project">Training Project:</h3>
+              <div>
+                <span class="star">*</span>
+                <a
+                  class="training-project__link"
+                  href="https://tmkvch18.github.io/rsschool-cv/"
+                  >rsschool-cv</a
+                >
+              </div>
+            </li>
+            <li class="content__item">
+              <h3 class="content__title education">Education:</h3>
+              <div class="education__text">
+                <span class="star">*</span> Belarus State Economic University
+              </div>
+            </li>
+            <li class="content__item">
+              <h3 class="content__title courses">Courses:</h3>
+              <ul class="courses__list">
+                <li class="courses__item">
+                  <span class="star">*</span> Rolling Scopes School
+                </li>
+                <li class="courses__item">
+                  <span class="star">*</span> IT-Academy
+                </li>
+              </ul>
+            </li>
+            <li class="content__item">
+              <h3 class="content__title languages">Languages:</h3>
+              <ul class="languages__list">
+                <li class="languages__item">
+                  <span class="star">*</span> Belarusian: native
+                </li>
+                <li class="languages__item">
+                  <span class="star">*</span> Russian: native
+                </li>
+                <li class="languages__item">
+                  <span class="star">*</span> English: A2
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer__list">
+            <div class="footer__item">
+              <a
+                class="footer__link-github"
+                href="https://github.com/tmkvch18"
+                target="_blank"
+                >My GitHub</a
+              >
+            </div>
+            <div class="footer__item">All rights reserved &copy; 2022</div>
+            <div class="footer__item">
+              <a
+                href="https://rs.school/js-stage0/"
+                class="footer__link-rs"
+                target="_blank"
+              >
+                <img
+                  class="footer__logo"
+                  src="./images/rs_school_js.svg"
+                  alt="logo rsschool"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
