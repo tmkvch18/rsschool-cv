@@ -20,9 +20,7 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#general-info"
-                >General information</a
-              >
+              <a class="header__nav-link" href="#about">About</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="#skills">Skills</a>
@@ -48,7 +46,7 @@
         </nav>
       </header>
       <main class="main">
-        <div class="main-screen" id="general-info">
+        <div class="main-screen" id="about">
           <div class="main-screen__photo">
             <img src="./images/sonic.jpg" alt="avatar" />
           </div>
@@ -112,7 +110,7 @@
               </li>
               <li class="section__item">
                 <i class="fa-brands fa-css3"></i>
-                <span class="section__item-text">CSS3</span>
+                <span class="section__item-text">CSS3 (Bootstrap, BEM)</span>
               </li>
               <li class="section__item">
                 <i class="fa-brands fa-sass"></i>
@@ -192,14 +190,14 @@
           <section class="section" id="code-example">
             <h2 class="section__title">Code Example:</h2>
             <pre>
-								<code>
-		function duplicateCount(text) {
-			return text.toLowerCase().split('').filter(function(val, i, arr) {
-				return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
-			}).length;
-		}
-								</code>
-							</pre>
+              <code>
+<span class="pink">function</span> <span class="green">duplicateCount</span><span class="orange">(text)</span> <span class="yellow">{</span>
+  <span class="pink">return</span> <span class="orange">text</span>.<span class="green">toLowerCase</span><span class="red">()</span>.<span class="green">split</span><span class="red">(</span><span class="yellow">''</span><span class="red">)</span>.<span class="green">filter</span><span class="red">(</span><span class="pink">function</span><span class="blue">(</span><span class="orange">val</span>,<span class="orange">i</span>,<span class="orange">arr</span><span class="blue">)</span> <span class="blue">{</span>
+    <span class="pink">return</span> <span class="span green">indexOf(</span><span class="orange">val</span><span class="green">)</span> <span class="pink">!==</span> <span class="orange">i</span> <span class="pink">&&</span> <span class="span green">lastIndexOf(</span><span class="orange">val</span><span class="green">)</span> <span class="pink">===</span> <span class="orange">i</span>;
+  <span class="blue">}</span><span class="red">)</span>.length;
+<span class="yellow">}</span>
+              </code>
+            </pre>
           </section>
           <section class="section" id="education">
             <h2 class="section__title">Education:</h2>
@@ -260,7 +258,20 @@
           </section>
         </div>
       </main>
-      <footer></footer>
+      <footer class="footer">
+        <a href="https://github.com/tmkvch18" class="footer__github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <span class="footer__year">
+          Copyright © 2024 - All rights reserved.
+        </span>
+        <a
+          href="https://rs.school/courses/javascript-preschool-ru"
+          class="footer__rs"
+        >
+          <img src="./images/svg/rs-school-logo.svg" alt="rs school" />
+        </a>
+      </footer>
     </div>
   </body>
 </html>
