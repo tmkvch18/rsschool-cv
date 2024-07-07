@@ -12,51 +12,255 @@
     <title>CV</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner-wrapper">
-          <div class="header__logo">
-            <i class="fa-solid fa-code"></i>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#general-info"
+                >General information</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#training-project"
+                >Training Project</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#code-example">Code Example</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#education">Education</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#languages">Languages</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#hobbies">Hobbies</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="main-screen" id="general-info">
+          <div class="main-screen__photo">
+            <img src="./images/sonic.jpg" alt="avatar" />
           </div>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#contacts">Contacts</a>
+          <h1 class="main-screen__title">Iĺja Tomkovič</h1>
+          <p class="main-screen__position">Front-End Developer</p>
+          <ul class="main-screen__contact-list">
+            <li class="main-screen__contact-item">
+              <a
+                class="main-screen__contact-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="main-screen__contact-item">
+              <a
+                class="main-screen__contact-link"
+                href="https://web.telegram.org/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </li>
+            <li class="main-screen__contact-item">
+              <a
+                class="main-screen__contact-link"
+                href="https://github.com/tmkvch18"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li class="main-screen__contact-item">
+              <a
+                class="main-screen__contact-link"
+                href="mailto:example@gmail.com"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+            <li class="main-screen__contact-item">
+              <a class="main-screen__contact-link" href="tel:+111111111111">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="main-screen__description">
+            Promising Front-end Developer with broad technical skillset. I learn
+            new technologies, read articles from the field of web development.
+            Highly motivated and positive person, who has a huge will to learn.
+          </p>
+        </div>
+        <div class="main__content">
+          <section class="section" id="skills">
+            <h2 class="section__title">Skills:</h2>
+            <ul class="section__list">
+              <li class="section__item">
+                <i class="fa-brands fa-html5"></i>
+                <span class="section__item-text">HTML5</span>
               </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#summary">Summary</a>
+              <li class="section__item">
+                <i class="fa-brands fa-css3"></i>
+                <span class="section__item-text">CSS3</span>
               </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#skills">Skills</a>
+              <li class="section__item">
+                <i class="fa-brands fa-sass"></i>
+                <span class="section__item-text">SASS/SCSS</span>
               </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#code-example"
-                  >Code Example</a
+              <li class="section__item">
+                <i class="fa-brands fa-js"></i>
+                <span class="section__item-text">JS (ES6)</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-brands fa-node"></i>
+                <span class="section__item-text">Node.js</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-brands fa-gulp"></i>
+                <span class="section__item-text">Gulp</span>
+              </li>
+              <li class="section__item">
+                <div class="section__icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 774 875.7"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M387 0l387 218.9v437.9L387 875.7 0 656.8V218.9z"
+                    />
+                    <path
+                      fill="#8ed6fb"
+                      d="M704.9 641.7L399.8 814.3V679.9l190.1-104.6 115 66.4zm20.9-18.9V261.9l-111.6 64.5v232l111.6 64.4zM67.9 641.7L373 814.3V679.9L182.8 575.3 67.9 641.7zM47 622.8V261.9l111.6 64.5v232L47 622.8zm13.1-384.3L373 61.5v129.9L172.5 301.7l-1.6.9-110.8-64.1zm652.6 0l-312.9-177v129.9l200.5 110.2 1.6.9 110.8-64z"
+                    />
+                    <path
+                      fill="#1c78c0"
+                      d="M373 649.3L185.4 546.1V341.8L373 450.1v199.2zm26.8 0l187.6-103.1V341.8L399.8 450.1v199.2zm-13.4-207zM198.1 318.2l188.3-103.5 188.3 103.5-188.3 108.7-188.3-108.7z"
+                    />
+                  </svg>
+                </div>
+                <span class="section__item-text">Webpack</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-brands fa-github"></i>
+                <span class="section__item-text">Git (GitHub)</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-brands fa-figma"></i>
+                <span class="section__item-text"
+                  >Figma, Adobe Photoshop, Adobe Illustrator</span
                 >
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#training-project"
-                  >Training Project</a
-                >
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#education">Education</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#courses">Courses</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#languages">Languages</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#hobbies">Hobbies</a>
               </li>
             </ul>
-          </nav>
+          </section>
+          <section class="section" id="training-project">
+            <h2 class="section__title">Training Project:</h2>
+            <ul class="section__list">
+              <li class="section__item">
+                <i class="fa-solid fa-code"></i>
+                <a
+                  href="https://tmkvch18.github.io/cssBayan/cssBayan/index.html"
+                  class="section__link"
+                >
+                  <span class="section__item-text">cssBayan</span>
+                </a>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-code"></i>
+                <a
+                  href="https://tmkvch18.github.io/cssMemeSlider/cssMemeSlider/index.html"
+                  class="section__link"
+                >
+                  <span class="section__item-text">cssMemeSlider</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="code-example">
+            <h2 class="section__title">Code Example:</h2>
+            <pre>
+								<code>
+		function duplicateCount(text) {
+			return text.toLowerCase().split('').filter(function(val, i, arr) {
+				return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+			}).length;
+		}
+								</code>
+							</pre>
+          </section>
+          <section class="section" id="education">
+            <h2 class="section__title">Education:</h2>
+            <ul class="section__list">
+              <li class="section__item">
+                <i class="fa-solid fa-building-columns"></i>
+                <span class="section__item-text">
+                  Belarus State Economic University
+                </span>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-building-columns"></i>
+                <span class="section__item-text">Rolling Scopes School</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-building-columns"></i>
+                <span class="section__item-text">IT-Academy</span>
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="languages">
+            <h2 class="section__title">Languages:</h2>
+            <ul class="section__list">
+              <li class="section__item">
+                <i class="fa-solid fa-star-of-life"></i>
+                <span class="section__item-text"> Belarusian: native </span>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-star-of-life"></i>
+                <span class="section__item-text">Russian: native</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-star-of-life"></i>
+                <span class="section__item-text">English: A2</span>
+              </li>
+            </ul>
+          </section>
+          <section class="section" id="hobbies">
+            <h2 class="section__title">Hobbies:</h2>
+            <ul class="section__list">
+              <li class="section__item">
+                <i class="fa-solid fa-star-of-life"></i>
+                <span class="section__item-text"> Computer Games </span>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-star-of-life"></i>
+                <span class="section__item-text">Computer Science</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-star-of-life"></i>
+                <span class="section__item-text">Graphic Design</span>
+              </li>
+              <li class="section__item">
+                <i class="fa-solid fa-star-of-life"></i>
+                <span class="section__item-text">Football</span>
+              </li>
+            </ul>
+          </section>
         </div>
-      </div>
-    </header>
-    <main></main>
-    <footer></footer>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>
