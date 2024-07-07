@@ -1,0 +1,118 @@
+:root {
+  --primary-color: rgb(0, 132, 255);
+  --second-color: rgb(255, 69, 58);
+  --bg: rgb(28, 28, 30);
+  --section: rgb(36, 36, 38);
+  --text: rgb(242, 242, 247);
+  --font-family: "Inter", san-serif;
+  --font-size: 16px;
+  --container-width: 1408px;
+  --container-padding-inline: 16px;
+  --transition-duration: 0.25s;
+  --border-radius: 6px;
+  --padding: 16px;
+  --border-color: rgb(44, 44, 46);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-block: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-inline) * 2);
+  padding-inline: var(--container-padding-inline);
+  margin: 0 auto;
+}
+
+.header {
+  padding-block: var(--padding);
+}
+
+.header__inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  background-color: var(--section);
+  padding: calc(var(--padding) / 2) var(--padding);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.header__logo {
+  font-size: 48px;
+  color: var(--primary-color);
+}
+
+.header__nav {
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.header__nav-item {
+}
+
+.header__nav-link {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color var(--transition-duration);
+}
+
+.header__nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  transition: width var(--transition-duration) ease-out;
+}
+
+/*MEDIA QUERY*/
+@media screen and (hover: hover) {
+  a {
+    width: 100%;
+  }
+
+  .header__nav-link:hover {
+    color: var(--primary-color);
+  }
+
+  .header__nav-link:hover::after {
+    width: 100%;
+  }
+}
