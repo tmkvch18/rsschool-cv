@@ -437,6 +437,9 @@ html,
   }
 
   .burger {
+    border: none;
+    outline: none;
+    background-color: transparent;
     display: block;
     width: 30px;
     height: 30px;

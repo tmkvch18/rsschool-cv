@@ -44,35 +44,33 @@
             </li>
           </ul>
         </nav>
-        <div class="burger" role="button">
+        <button class="burger">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
         <div class="mobile-menu">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#about">About</a>
+              <a href="#about" class="header__nav-link">About</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#skills">Skills</a>
+              <a href="#skills" class="header__nav-link">Skills</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#training-project"
-                >Training Project</a
-              >
+              <a href="#training-project" class="header__nav-link">Training Project</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#code-example">Code Example</a>
+              <a href="#code-example" class="header__nav-link">Code Example</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#education">Education</a>
+              <a href="#education" class="header__nav-link">Education</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#languages">Languages</a>
+              <a href="#languages" class="header__nav-link">Languages</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#hobbies">Hobbies</a>
+              <a href="#hobbies" class="header__nav-link">Hobbies</a>
             </li>
           </ul>
         </div>
@@ -225,7 +223,7 @@
               <code>
 <span class="pink">function</span> <span class="green">duplicateCount</span><span class="orange">(text)</span> <span class="yellow">{</span>
   <span class="pink">return</span> <span class="orange">text</span>.<span class="green">toLowerCase</span><span class="red">()</span>.<span class="green">split</span><span class="red">(</span><span class="yellow">''</span><span class="red">)</span>.<span class="green">filter</span><span class="red">(</span><span class="pink">function</span><span class="blue">(</span><span class="orange">val</span>,<span class="orange">i</span>,<span class="orange">arr</span><span class="blue">)</span> <span class="blue">{</span>
-    <span class="pink">return</span> <span class="span green">indexOf(</span><span class="orange">val</span><span class="green">)</span> <span class="pink">!==</span> <span class="orange">i</span> <span class="pink">&&</span> <span class="span green">lastIndexOf(</span><span class="orange">val</span><span class="green">)</span> <span class="pink">===</span> <span class="orange">i</span>;
+    <span class="pink">return</span> <span class="span green">indexOf(</span><span class="orange">val</span><span class="green">)</span> <span class="pink">!==</span> <span class="orange">i</span> <span class="pink">&amp;&amp;</span> <span class="span green">lastIndexOf(</span><span class="orange">val</span><span class="green">)</span> <span class="pink">===</span> <span class="orange">i</span>;
   <span class="blue">}</span><span class="red">)</span>.length;
 <span class="yellow">}</span>
               </code>
